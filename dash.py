@@ -7,7 +7,7 @@ from datetime import datetime, timedelta
 
 # Cria o dashboard
 st.title('Focos de Calor no Brasil')
-st.markdown('Este dashboard apresenta os focos de calor do dia de ontem. Você também pode selecionar datas anteriores, até 40 dias antes de hoje. Fonte dos dados: https://queimadas.dgi.inpe.br/queimadas/dados-abertos/')
+st.markdown('Este dashboard apresenta os focos de calor do dia de ontem. Você também pode selecionar datas anteriores, até 40 dias antes de hoje.')
 
 
 # Obter a data de ontem
@@ -69,3 +69,5 @@ fig.update_layout(
 
 # Mostra o gráfico
 st.plotly_chart(fig)
+
+st.markdown('Fonte dos dados: https://queimadas.dgi.inpe.br/queimadas/dados-abertos/')
